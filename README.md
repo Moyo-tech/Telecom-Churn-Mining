@@ -30,16 +30,16 @@ This project utilized a comprehensive telecom churn dataset available on [Kaggle
 
 ## Model Architecture and Optimization
 
-### Model Selection
+-  ### Model Selection
 The project initially explored various models, including Logistic Regression, KNN, XGBoost, and LightGBM, to evaluate their performance in predicting customer churn. Based on initial validation set results, the focus shifted towards optimizing XGBoost, LightGBM, and KNN due to their superior performance.
 
-### Handling Class Imbalance
+-  ### Handling Class Imbalance
 Given the imbalanced nature of churn datasets, where the number of churners is typically much lower than non-churners, we considered applying SMOTE to balance the classes, enhancing the model's ability to predict the minority class accurately.
 
-### Hyperparameter Tuning
+-  ### Hyperparameter Tuning
 We employed [Optuna](https://github.com/optuna/optuna-examples) , a hyperparameter optimization framework, to fine-tune the models. [Optuna](https://github.com/optuna/optuna-examples)'s efficient search capabilities allowed us to explore a wide range of parameter configurations to find the optimal settings for each model, focusing on maximizing the AUC score as it provides a robust measure for evaluating binary classification models, especially in the presence of class imbalance.
 
-### Future Directions: Ensemble Methods
+-  ### Future Directions: Ensemble Methods
 As part of the ongoing optimization, we are exploring ensemble methods to combine the strengths of individual models. By leveraging the diverse predictions from XGBoost, LightGBM, and potentially KNN, we aim to develop a more robust and accurate ensemble model that improves overall prediction performance.
 
 ## Citations
